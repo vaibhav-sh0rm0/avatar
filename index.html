@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <bold> <title>Get Your AVATAR</title></bold>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <section>
+        <div class="heading-1">
+            <h1>GET YOUR AVATAR</h1>
+            <div class="heading-2">
+                <h3>    WHAT IS YOUR FUCKIN NAME </h3>
+                <div class="search-box">
+                   <input type="text" placeholder="Enter Your Name " id="name-id">
+                    <button type="submit" ><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="avatar-image">
+                <img src="avatar.png" alt="" height="300" width="300 " class="img-avt">
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                const a = $('#name-id').val();
+                alert(a);
+                $('.img-avt').attr('src',`https://joeschmoe.io/api/v1/random`)
+
+            })
+        })
+    </script>
+</body>
+</html>
